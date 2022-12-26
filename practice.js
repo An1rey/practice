@@ -94,13 +94,13 @@
 // document.write(tmp);
 // 7.Знайти середнє арифметичне всіх цілих чисел від 1 до 500
 // let sum = 0;
-// for (let i = 1; i <= 500; i++)
+// for (let i = 1; i <= 100; i++)
 // {
 //     sum += i;
 // }
 // console.log(sum/500);
 // 8. Знайти добуток усіх цілих чисел від 15 до 35
-//  let result = 1
+//  let result = 0
 //  for (let i = 15; i <= 35; i++) {
 //      const current = i
 //      const  next = i + 1
