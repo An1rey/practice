@@ -100,30 +100,21 @@
 // }
 // console.log(sum/500);
 // 8. Знайти добуток усіх цілих чисел від 15 до 35
-//  let result = 0
-//  for (let i = 15; i <= 35; i++) {
-//      const current = i
-//      const  next = i + 1
-//      const isFirst = current === 15
-//      result *= i
-//  }
-//  console.log(result)
-//9.Вивести суму тільки парних чисел в діапазоні від 30 до 80
-//  const isEvenNumbers = (num) => num % 2 === 0
-//  const isFirstIteration = (firstNum,) => firstNum === currentNum
-//  const getSumEvenByFromByTo = (start, finish) => {
-//      let result = 1
-//      for (let i = start; i <= finish; i++) {
-//          const current = i
-//          const next = current + 2
-//         if( isEvenNumbers(current)){
-//              result =+i
-//         }
+// let result = 0;
+// for(let i = 15; i <= 35; i++){
+//     result = result + i;
+//     console.log(result);
+// }
+// 9.Вивести суму тільки парних чисел в діапазоні від 30 до 80
+// for (let i = 30; i <= 80; i++) {
+//     if (i % 2 === 0) {
+//         console.log(i)
 //     }
-//      return result
-//  }
-// const sumEvenFrom30To80 = getSumEvenByFromByTo(30, 80)
-// console.log(sumEvenFrom30To80)
+// }
 //10.Вивести всі числа в діапазоні від 100 до 200 кратні 3
-
+// for(let i = 100; i<=200; i++){
+//     if( i % 3 === 0){
+//         console.log(i)
+//     }
+// }
 
