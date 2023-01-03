@@ -101,20 +101,20 @@
 // console.log(sum/500);
 // 8. Знайти добуток усіх цілих чисел від 15 до 35
 // let result = 0;
-// for(let i = 15; i <= 35; i++){
-//     result = result + i;
-//     console.log(result);
+// for(let a = 15; a <= 35; a++){
+//     result = result + a;
+//     console.log( result );
 // }
 // 9.Вивести суму тільки парних чисел в діапазоні від 30 до 80
 // for (let i = 30; i <= 80; i++) {
 //     if (i % 2 === 0) {
-//         console.log(i)
+//         console.log( i )
 //     }
 // }
 //10.Вивести всі числа в діапазоні від 100 до 200 кратні 3
 // for(let i = 100; i<=200; i++){
 //     if( i % 3 === 0){
-//         console.log(i)
+//         console.log( i )
 //     }
 // }
 
