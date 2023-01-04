@@ -94,27 +94,27 @@
 // document.write(tmp);
 // 7.Знайти середнє арифметичне всіх цілих чисел від 1 до 500
 // let sum = 0;
-// for (let i = 1; i <= 100; i++)
+// for (let i = 1; i <= 500; i++)
 // {
 //     sum += i;
 // }
 // console.log(sum/500);
 // 8. Знайти добуток усіх цілих чисел від 15 до 35
 // let result = 0;
-// for(let i = 15; i <= 35; i++){
-//     result = result + i;
-//     console.log(result);
+// for(let a = 15; a <= 35; a++){
+//     result = result + a;
+//     console.log( result );
 // }
 // 9.Вивести суму тільки парних чисел в діапазоні від 30 до 80
-// for (let i = 30; i <= 80; i++) {
-//     if (i % 2 === 0) {
-//         console.log(i)
+// for (let b = 30; b <= 80; b++) {
+//     if (b % 2 === 0) {
+//         console.log( b )
 //     }
 // }
 //10.Вивести всі числа в діапазоні від 100 до 200 кратні 3
-// for(let i = 100; i<=200; i++){
-//     if( i % 3 === 0){
-//         console.log(i)
+// for(let c = 100; c<=200; c++){
+//     if( c % 3 === 0){
+//         console.log( c )
 //     }
 // }
 
