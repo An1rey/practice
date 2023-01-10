@@ -9,84 +9,84 @@
 //  }
 // });
 // console.log(result);
-//     Знайти мінімальний елемент масиву та його порядковий номер.
-// const array = [16,-37,54,-4,72,-56,47,4, -16,25,-37,46,4,-51,27,-63,4,-54,76,-4,12,-35,4,47]
-// let minValue = array[0];
-// let minIndex = 0;
-// for (let i = 0;i<array.length; i++){
-//     if (array[i]<minValue){
-//         minValue = array[i]
-//         minIndex = -63;
-//     }
-// }
-// console.log(`minValue: ` + minValue)
-// console.log(`minIndex: ` + minIndex)
+    // Знайти мінімальний елемент масиву та його порядковий номер.
+// let array = [16,-37,54,-4,72,-56,47,4, -16,25,-37,46,4,-51,27,-63,4,-54,76,-4,12,-35,4,47]
+// const min = Math.min(...array)
+// const position= array.indexOf(min) + 1
+// console.log(min, position)
 // Знайти максимальний елемент масиву та його порядковий номер.
-// const array = [16,-37,54,-4,72,-56,47,4, -16,25,-37,46,4,-51,27,-63,4,-54,76,-4,12,-35,4,47]
-// let maxValue = array[0];
-// let maxIndex = 0;
-// for (let i = 0;i<array.length; i++){
-//     if (array[i]>maxValue){
-//         maxValue = array[i]
-//         maxIndex = 72;
-//     }
-// }
-// console.log(`minValue: ` + maxValue)
-// console.log(`minIndex: ` + maxIndex)
+// let array = [16,-37,54,-4,72,-56,47,4, -16,25,-37,46,4,-51,27,-63,4,-54,76,-4,12,-35,4,47]
+// const max = Math.max(...array)
+// const position = array.indexOf(max) + 1
+// console.log(max, position)
 //     Визначити кількість негативних елементів
 // let arr = [16,-37,54,-4,72,-56,47,4, -16,25,-37,46,4,-51,27,-63,4,-54,76,-4,12,-35,4,47];
-// let negative = arr.filter(elem =>(elem>0))
+// let negative = arr.filter(elem =>(elem<0))
 // console.log(negative.length)
 //     Знайти кількість непарних позитивних елементів.
 //  const array = [16,-37,54,-4,72,-56,47,4, -16,25,-37,46,4,-51,27,-63,4,-54,76,-4,12,-35,4,47]
 //  console.log( array.filter(elem => elem % 2 > 0).length );
-//     Знайти кількість парних позитивних елементів.
+    // Знайти кількість парних позитивних елементів.
 // const array = [16,-37,54,-4,72,-56,47,4, -16,25,-37,46,4,-51,27,-63,4,-54,76,-4,12,-35,4,47]
-// console.log( array.filter(elem => elem % 2 < 0).length );
+//  console.log( array.filter(elem => elem % 2 === 0 && elem >= 0).length );
 //     Знайти суму парних позитивних елементів.
-// const array = [16,-37,54,-4,72,-56,47,4, -16,25,-37,46,4,-51,27,-63,4,-54,76,-4,12,-35,4,47]
-// function getEven(num) {
-//     return num.filter(function(e) {
-//         return !(e & 1);
-//     });
-// }
-// function arraySum(arr) {
-//     return getEven(arr).reduce(function(a, b){
-//         return a + b;
-//     });
-// }
-// console.log(arraySum(array))
-// const array = [16,-37,54,-4,72,-56,47,4, -16,25,-37,46,4,-51,27,-63,4,-54,76,-4,12,-35,4,47]
-// let result = array.reduce(function(sum, elem) {
-//     if (elem > 0) {
-//         return sum + elem;
-//     } else {
-//         return sum;
-//     }
-// });
+// function EvenOddSum(arr, n)
+// {
+//  let even = 0;
+//  let odd = 0;
+//  for (let i = 0; i < n; i++)
+//  {
 //
-// console.log(result);
-// const array = [16,-37,54,-4,72,-56,47,4, -16,25,-37,46,4,-51,27,-63,4,-54,76,-4,12,-35,4,47]
-// let result = array.reduce(function(sum, elem) {
-//     if (elem >= 0) {
-//         return sum + elem;
-//     } else {
-//         return sum;
-//     }
-// });
+//   if (i % 2 === 0)
+//    even += arr[i];
+//   else
+//    odd += arr[i];
+//  }
 //
-// console.log(result);
+//  document.write("Even index positions sum " + even);
+//  document.write("<br>" + "Odd index positions sum " + odd);
+// }
+//
+// const array = [16,-37,54,-4,72,-56,47,4, -16,25,-37,46,4,-51,27,-63,4,-54,76,-4,12,-35,4,47]
+// let n = array.length;
+//
+// EvenOddSum(array, n);
+// const array = [16,-37,54,-4,72,-56,47,4, -16,25,-37,46,4,-51,27,-63,4,-54,76,-4,12,-35,4,47]
+// const sumEvens = (array) => {
+//  let sum = 0;
+//  for (let i = 0; i < array.length; i++) {
+//   if (i % 2 === 0){
+//    sum = sum +array[i];
+//   }
+//  }
+//  return sum;
+// }
+//
+// console.log(sumEvens(array));
 //     Знайти суму непарних позитивних елементів.
-// const array = [16,-37,54,-4,72,-56,47,4, -16,25,-37,46,4,-51,27,-63,4,-54,76,-4,12,-35,4,47]
-// let result = array.reduce(function(sum, elem) {
-//     if (elem <= 0) {
-//         return sum + elem;
-//     } else {
-//         return sum;
-//     }
-// });
+// function EvenOddSum(arr, n)
+// {
+//  let even = 0;
+//  let odd = 0;
+//  for (let i = 0; i < n; i++)
+//  {
 //
-// console.log(result);
+//
+//   if (i % 2 === 0)
+//    even += arr[i];
+//   else
+//    odd += arr[i];
+//  }
+//
+//  document.write("Even index positions sum " + even);
+//  document.write("<br>" + "Odd index positions sum " + odd);
+// }
+//
+//
+// const arr = [16,-37,54,-4,72,-56,47,4, -16,25,-37,46,4,-51,27,-63,4,-54,76,-4,12,-35,4,47];
+// let n = arr.length;
+//
+// EvenOddSum(arr, n);
 //     Знайти добуток позитивних елементів.
 // const arr = [16,-37,54,-4,72,-56,47,4, -16,25,-37,46,4,-51,27,-63,4,-54,76,-4,12,-35,4,47];
 // let sum = 1;
